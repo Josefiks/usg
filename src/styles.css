@@ -47,7 +47,7 @@ body {
 #notes > #title {
   display: inline-block;
 
-  font: 800 18px/1 "Rajdhani", sans-serif;
+  font: 800 20px/1 "Rajdhani", sans-serif;
   background: linear-gradient(90deg, #e34949 0%, #ce2a48 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
