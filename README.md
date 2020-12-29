@@ -1,1 +1,1 @@
-# Unique Steam Group Tag Generator (USGTG)
+Unique Steam Group Tag Generator (USGTG)
