@@ -96,6 +96,8 @@ input {
 button {
   background: linear-gradient(180deg, #4c89d9 0%, #50aeda 100%);
 
+  cursor: pointer;
+
   box-shadow: 0px 4px 12px rgba(88, 129, 198, 0.4);
   border: none;
   border-radius: 100px;
