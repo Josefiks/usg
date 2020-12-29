@@ -1,1 +1,2 @@
-Unique Steam Group Tag Generator (USGTG)
+# usgtg
+Created with CodeSandbox
