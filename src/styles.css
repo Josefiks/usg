@@ -110,3 +110,16 @@ button {
 
   outline: none;
 }
+
+a {
+  font: 800 20px/1 "Rajdhani", sans-serif;
+  background: linear-gradient(180deg, #4c89d9 0%, #50aeda 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+#donate {
+  padding: 20px;
+}
