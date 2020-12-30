@@ -9,4 +9,5 @@ function runTest() {
   document.getSelection().removeAllRanges();
 }
 /* by steamcommunity.com/id/cpt-jsph */
+
 /* eslint-env jquery */

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-
+@import url("https://rsms.me/inter/inter.css");
 html,
 body {
   display: flex;
@@ -41,7 +41,10 @@ body {
 }
 
 #notes {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 20px 50px 20px;
 }
 
 #notes > #title {
@@ -118,8 +121,25 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+
+  align-self: center;
 }
 
-#donate {
-  padding: 20px;
+header {
+  display: none;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  font: 800 16px/1 "Rajdhani", sans-serif;
+}
+.comment > .username {
+  font: 800 16px/1 "Rajdhani", sans-serif;
+  color: white;
+}
+.comment > .message {
+  font: 800 16px/1 "Rajdhani", sans-serif;
+  color: grey;
+  margin: 0 0 0 5px;
 }
