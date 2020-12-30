@@ -79,7 +79,8 @@ li:before {
   content: "\e911";
 }
 
-input {
+input,
+textarea {
   flex: 1;
 
   background: #21262f;
