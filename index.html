@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="app">
-      <div id="title">
+      <div id="header">
         <i class="uil uil-grin-tongue-wink-alt"></i> Unique Steam Group Tag
         Generator
         <div id="subtitle">
@@ -27,14 +27,34 @@
         />
         <button id="copyTag">COPY TO CLIPBOARD</button>
       </div>
-      <div id="notes">
-        <div id="title">
-          Keep in mind
+      <div id="content">
+        <h3>How to use</h3>
+        <ul>
+          <li>Type your tag in field.</li>
+          <li>Click "copy to clipboard".</li>
+          <li>
+            Go to
+            <a href="https://steamcommunity.com/actions/GroupCreate"
+              >Steam Group Create</a
+            >
+            or do it manually in Steam app.
+          </li>
+          <li>Paste it into abbreviation and check if it's available.</li>
+          <li>Fill other inputs and create your group.</li>
+        </ul>
+        <div class="thanks">
+          <a href="https://www.paypal.com/donate?hosted_button_id=9N67AV4H5DYTL"
+            ><i class="uil uil-coffee"></i> Worked for you? Buy me a coffee!
+            Thank you!</a
+          >
+        </div>
+        <h3>
+          Notes (keep in mind
           <img
             src="https://cdn.frankerfacez.com/emoticon/160747/4"
             height="18px"
-          />
-        </div>
+          />)
+        </h3>
         <ul>
           <li>
             Even these unique Steam tags might be taken. It’s all about who’s
@@ -51,13 +71,10 @@
           <li>
             Generated tag can't be used as your group url.
           </li>
-          <a href="https://www.paypal.com/donate?hosted_button_id=9N67AV4H5DYTL"
-            ><i class="uil uil-coffee"></i> Worked for you? Buy me a coffee!
-            Thank you!</a
-          >
         </ul>
+        <h3>Leave a comment</h3>
+        <div id="comments"></div>
       </div>
-      <div id="comments"></div>
     </div>
     <script src="src/index.js"></script>
     <!-- <script src="src/timeago.js"></script> -->

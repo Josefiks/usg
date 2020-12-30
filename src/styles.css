@@ -23,13 +23,13 @@ body {
   width: 700px;
 }
 
-#app > #title {
+#header {
   font: 800 28px/1 "Rajdhani", sans-serif;
   color: white;
 
   padding: 20px;
 }
-#app > #title > #subtitle {
+#subtitle {
   font: 400 18px/1 "Rajdhani", sans-serif;
   color: #ffffff90;
 
@@ -40,14 +40,20 @@ body {
   display: flex;
 }
 
-#notes {
+#content {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 20px 20px 50px 20px;
+  padding: 0 20px 20px 20px;
 }
-
-#notes > #title {
+h3,
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+h3 {
   display: inline-block;
 
   font: 800 20px/1 "Rajdhani", sans-serif;
@@ -56,31 +62,31 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  margin: 20px 0 10px 0;
 }
 
-ul {
+#content > ul {
   list-style-type: none;
   font: 700 16px/1 "Rajdhani", sans-serif;
   color: #ffffff;
   padding-inline-start: 0;
 }
 
-li {
+#content > li {
   position: relative;
   padding-left: 20px;
   margin-bottom: 5px;
 }
 
-li:before {
+#content > li:before {
   position: absolute;
   top: 0;
   left: 0;
   font-family: unicons-line;
-  content: "\e911";
+  content: "\eb9f";
 }
 
-input,
-textarea {
+#generator > input {
   flex: 1;
 
   background: #21262f;
@@ -116,7 +122,7 @@ button {
 }
 
 a {
-  font: 800 20px/1 "Rajdhani", sans-serif;
+  font: 800 16px/1 "Rajdhani", sans-serif;
   background: linear-gradient(180deg, #4c89d9 0%, #50aeda 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -133,6 +139,7 @@ header {
 .comment {
   display: flex;
   flex-direction: row;
+  color: #ffffff;
   font: 800 16px/1 "Rajdhani", sans-serif;
 }
 .comment > .username {
@@ -140,7 +147,56 @@ header {
   color: white;
 }
 .comment > .message {
-  font: 800 16px/1 "Rajdhani", sans-serif;
-  color: grey;
+  font: 400 16px/1 "Rajdhani", sans-serif;
   margin: 0 0 0 5px;
+}
+.comments-list {
+  background: #21262f;
+  padding: 10px;
+}
+.comments-form ul {
+  list-style-type: none;
+  padding-block-start: none;
+}
+.comments-form > form > ul {
+  display: flex;
+}
+.comments-form > form > ul > li {
+  padding: 0;
+}
+.comments-form li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: unicons-line;
+  content: "";
+}
+.comment-forms {
+  display: flex;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  background: #21262f;
+}
+.comment-forms > .comment {
+  flex-grow: 1;
+}
+.comment-forms > input {
+  background: #2d3340;
+  border: none;
+  /* border-radius: 100px; */
+
+  padding: 10px;
+  margin: 0 10px 0 0;
+
+  font: 700 18px/1 "Rajdhani", sans-serif;
+  color: #ffffff;
+
+  outline: none;
+  resize: none;
+
+  height: 100%;
+}
+.comment-forms > input:last-child {
+  margin: 0;
+  height: auto;
 }

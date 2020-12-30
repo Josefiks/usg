@@ -11,6 +11,7 @@ function _defineProperty(obj, key, value) {
   }
   return obj;
 }
+
 const config = {
   apiKey: "AIzaSyDPy7t3kIojylQ1P_XGYghehM2eoZRiIFg",
   authDomain: "usgtg-9a992.firebaseapp.com",
@@ -94,38 +95,31 @@ class CommentForm extends React.Component {
         "form",
         { onSubmit: this.handleSubmit } /*#__PURE__*/,
         React.createElement(
-          "ul",
-          null /*#__PURE__*/,
-          React.createElement(
-            "li",
-            null /*#__PURE__*/,
-            React.createElement("input", {
-              name: "username",
-              type: "text",
-              placeholder: "Name",
-              value: this.state.username,
-              onChange: this.handleChange,
-              required: true
-            })
-          ) /*#__PURE__*/,
+          "div",
+          { className: "comment-forms" } /*#__PURE__*/,
+          React.createElement("input", {
+            name: "username",
+            type: "text",
+            className: "username",
+            placeholder: "Your name",
+            value: this.state.username,
+            onChange: this.handleChange,
+            required: true
+          }) /*#__PURE__*/,
 
-          React.createElement(
-            "li",
-            null /*#__PURE__*/,
-            React.createElement("textarea", {
-              name: "comment",
-              placeholder: "Comment",
-              value: this.state.comment,
-              onChange: this.handleChange,
-              required: true
-            })
-          ) /*#__PURE__*/,
+          React.createElement("input", {
+            name: "comment",
+            className: "comment",
+            placeholder: "Comment",
+            value: this.state.comment,
+            onChange: this.handleChange,
+            required: true
+          }) /*#__PURE__*/,
 
-          React.createElement(
-            "li",
-            null /*#__PURE__*/,
-            React.createElement("input", { type: "submit", value: "Post" })
-          )
+          React.createElement("input", {
+            type: "submit",
+            value: "Send"
+          })
         )
       )
     );

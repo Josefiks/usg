@@ -1,6 +1,6 @@
-document.getElementById("copyTag").addEventListener("click", runTest);
+document.getElementById("copyTag").addEventListener("click", copyTag);
 
-function runTest() {
+function copyTag() {
   var getTag = document.getElementById("tag").value;
   var splitTag = getTag.split("").join("؜");
   $("input#tag").val(splitTag).select();
