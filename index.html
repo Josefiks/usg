@@ -3,7 +3,7 @@
   <head>
     <title>USGTG by Joseph</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
     <link rel="stylesheet" href="src/styles.css" />
     <link
       rel="stylesheet"
@@ -21,21 +21,23 @@
         </div>
       </div>
       <div id="generator">
-        <input
-          id="tag"
-          placeholder="Your unique tag (max len. 6)"
-          maxlength="6"
-        />
+        <input id="tag" placeholder="Your unique tag (max len. 6)" />
         <button id="copyTag">COPY TO CLIPBOARD</button>
       </div>
       <div id="content">
         <h3>How to use</h3>
         <ul>
           <li>Type your tag in field.</li>
+          <li>
+            Click "copy to clipboard". This will generate and copy tag to your
+            clipboard.
+          </li>
           <li>Click "copy to clipboard".</li>
           <li>
             Go to
-            <a href="https://steamcommunity.com/actions/GroupCreate"
+            <a
+              href="https://steamcommunity.com/actions/GroupCreate"
+              target="_blank"
               >Steam Group Create</a
             >
             or do it manually in Steam app.
@@ -44,7 +46,9 @@
           <li>Fill other inputs and create your group.</li>
         </ul>
         <div class="thanks">
-          <a href="https://www.paypal.com/donate?hosted_button_id=9N67AV4H5DYTL"
+          <a
+            href="https://www.paypal.com/donate?hosted_button_id=9N67AV4H5DYTL"
+            target="_blank"
             ><i class="uil uil-coffee"></i> Worked for you? Buy me a coffee!
             Thank you!</a
           >
@@ -88,4 +92,3 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <script src="src/messages.js"></script>
   </body>
-</html>
