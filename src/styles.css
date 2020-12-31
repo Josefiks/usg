@@ -200,3 +200,11 @@ header {
   margin: 0;
   height: auto;
 }
+.thanks {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 8px 0;
+}
+.thanks > a {
+  font-size: 20px;
+}
