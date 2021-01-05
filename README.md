@@ -1,2 +1,2 @@
-simple Steam group tag generator
-#LIVE PREVIEW https://cpt-jsph.github.io/usgtg/
+###### Simple Steam group tag generator
+[Live Preview](https://cpt-jsph.github.io/usgtg/)
