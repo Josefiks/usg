@@ -116,10 +116,11 @@ class CommentForm extends React.Component {
             required: true
           }) /*#__PURE__*/,
 
-          React.createElement("input", {
+          React.createElement("button", {
             type: "submit",
-            value: "Send"
-          })
+            className: "button",
+            children: React.createElement('i', {className: "uil uil-enter" }),
+          })/*#__PURE__*/,
         )
       )
     );
@@ -134,7 +135,7 @@ class CommentList extends React.Component {
   componentWillMount() {
     // [2]
     const db = firebase.database().ref("comments");
-    const MAX_COUNT = 9;
+    const MAX_COUNT = 100;
     db.on("value", (snapshot) => {
       if (snapshot.numChildren() > MAX_COUNT) {
         let childCount = 0;

@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html,
 body {
   display: flex;
   justify-content: center;
 
-  background: linear-gradient(rgba(32, 36, 44, 0.75), rgba(12, 15, 20, 0.75)),
-    url(https://i.imgur.com/i8Do7Ur.png);
+  background: linear-gradient(rgba(12, 15, 20, 0.75), rgba(12, 15, 20, 0.375)),
+    url(./image/background.png);
 
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 
   margin: 0;
@@ -18,141 +19,73 @@ body {
 #app {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
-  padding: 30px;
-  width: 700px;
+  width: 600px;
 }
-
 #header {
-  font: 800 28px/1 "Rajdhani", sans-serif;
-  color: white;
-
-  padding: 20px;
+    padding: 20px;
 }
-#subtitle {
-  font: 400 18px/1 "Rajdhani", sans-serif;
-  color: #ffffff90;
-
-  padding: 10px 0;
+#header > #title {
+    font: 800 36px/22.97px "Poppins", sans-serif;
+    color: #ffffff;
 }
-
-#generator {
-  display: flex;
+#header > #subtitle {
+    font: 200 18px/22.97px "Rajdhani", sans-serif;
+    color: #ffffff80;
 }
 
-#content {
+#generators {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 0 20px 20px 20px;
-}
-h3,
-ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-h3 {
-  display: inline-block;
-
-  font: 800 20px/1 "Rajdhani", sans-serif;
-  background: linear-gradient(90deg, #e34949 0%, #ce2a48 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  margin: 20px 0 10px 0;
+  padding: 10px;
+  background: rgba(13, 16, 21, 0.25);
+  border-radius: 28px;
 }
 
-#content > ul {
-  list-style-type: none;
-  font: 700 16px/1 "Rajdhani", sans-serif;
-  color: #ffffff;
-  padding-inline-start: 0;
+#container {
+    margin: 30px 0 0 0;
+}
+#container > #title {
+    font: 700 24px/22.97px "Poppins", sans-serif;
+    background: linear-gradient(180deg, #4C89D9 0%, #50AEDA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
-#content > ul > li {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 5px;
-}
-
-#content > ul > li:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-family: unicons-line;
-  content: "\eaf3";
-}
-
-#generator > input {
-  flex: 1;
-
-  background: #21262f;
-
-  border: none;
-  border-radius: 100px;
-
-  padding: 20px;
-  margin: 0 10px 0 0;
-
-  font: 700 18px/1 "Rajdhani", sans-serif;
-  color: #ffffff;
-
-  outline: none;
-}
-
-button {
-  background: linear-gradient(180deg, #4c89d9 0%, #50aeda 100%);
-
-  cursor: pointer;
-
-  box-shadow: 0px 4px 12px rgba(88, 129, 198, 0.4);
-  border: none;
-  border-radius: 100px;
-
-  padding: 20px;
-
-  font: 800 18px/1 "Rajdhani", sans-serif;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.45);
-  color: #ffffff;
-
-  outline: none;
-}
-
-a {
-  font: 800 16px/1 "Rajdhani", sans-serif;
-  background: linear-gradient(180deg, #4c89d9 0%, #50aeda 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-
-  align-self: center;
-}
-
-header {
-  display: none;
+#container > #content {
+    font: 400 18px/22.97px "Rajdhani", sans-serif;
+    padding: 10px;
+    color: #ffffff;
 }
 
 .comment {
   display: flex;
   flex-direction: row;
-  color: #ffffff;
-  font: 800 16px/1 "Rajdhani", sans-serif;
 }
 .comment > .username {
-  font: 800 16px/1 "Rajdhani", sans-serif;
-  color: white;
+  font: 700 18px/22.97px "Rajdhani", sans-serif;
+  color: #ffffff;
 }
 .comment > .message {
-  font: 400 16px/1 "Rajdhani", sans-serif;
+  font: 400 18px/22.97px "Rajdhani", sans-serif;
+  color: #ffffff80;
   margin: 0 0 0 5px;
 }
+.comments {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    background: rgba(13, 16, 21, 0.25);
+    border-radius: 28px;
+}
 .comments-list {
-  background: #21262f;
-  padding: 10px;
+    background: #0D1015;
+    border-radius: 18px;
+    padding: 10px 12px;
 }
 .comments-form ul {
   list-style-type: none;
@@ -172,39 +105,62 @@ header {
   content: "";
 }
 .comment-forms {
-  display: flex;
-  margin: 10px 0 0 0;
-  padding: 10px;
-  background: #21262f;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 0 0;
 }
 .comment-forms > .comment {
   flex-grow: 1;
 }
-.comment-forms > input {
-  background: #2d3340;
-  border: none;
-  /* border-radius: 100px; */
-
-  padding: 10px;
-  margin: 0 10px 0 0;
-
-  font: 700 18px/1 "Rajdhani", sans-serif;
-  color: #ffffff;
-
-  outline: none;
-  resize: none;
-
-  height: 100%;
+a {
+    font: 500 18px/1 "Rajdhani", sans-serif;
+    background: linear-gradient(90deg, #6ED34B 0%, #2BB048 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
-.comment-forms > input:last-child {
-  margin: 0;
-  height: auto;
+input {
+    font: 500 18px/1 "Rajdhani", sans-serif;
+    background: #0D1015;
+    border-radius: 100px;
+    border: none;
+    margin-right: 10px;
+    padding: 15px;
+    height: 12px;
+    color: #ffffff;
+
+    flex: 1;
 }
-.thanks {
-  display: flex;
-  justify-content: center;
-  margin: 24px 0 8px 0;
+input, button {
+    outline: none;
+    cursor: pointer;
 }
-.thanks > a {
-  font-size: 20px;
+.comment-forms > .username {
+    width: 100px;
+    flex: 0;
+}
+#generator {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+#generator:last-child {
+    margin: 0;
+}
+.button {
+    font: 700 18px/1 "Rajdhani", sans-serif;
+    background: linear-gradient(90deg, #6ED34B 0.01%, #2BB048 100%);
+    box-shadow: 0px 4px 12px rgba(50, 180, 73, 0.4);
+    border-radius: 100px;
+    border: none;
+    padding: 10px 24px;
+
+    color: #ffffff;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+
+    /* margin-left: 10px; */
+}
+.blue {
+    background: linear-gradient(180deg, #4C89D9 0%, #50AEDA 100%) !important;
+    box-shadow: 0px 4px 12px rgba(50, 141, 180, 0.4) !important;
 }

@@ -1,92 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>USGTG by Joseph</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/styles.css" />
-    <link rel="stylesheet" href="src/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
-    />
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-  </head>
+    <head>
+        <title>Unique Steam Group by Joseph</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="src/styles.css" />
+        <link rel="stylesheet" href="src/styles.css" />
+        <link
+        rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+        />
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
   <body>
     <div id="app">
-      <div id="header">
-        <i class="uil uil-grin-tongue-wink-alt"></i> Unique Steam Group Tag
-        Generator
-        <div id="subtitle">
-          Your second chance to get that fancy & short tag you always wanted.
+        <div id="header">
+            <div id="title">
+                <i class="uil uil-check-circle"></i> Unique Steam Group
+            </div>
+            <div id="subtitle">
+                Another chance to get that fancy name & tag you always wanted.
+            </div>
         </div>
+        <div id="generators">
+            <div id="generator">
+                <input id="name" placeholder="Unique name (max len. 32)" />
+                <button class="button" id="copyName">Gen. & Copy <i class="uil uil-copy"></i></button>
+            </div>
+            <div id="generator">
+                <input id="tag" placeholder="Unique abbreviation (max len. 6)" />
+                <button class="button blue" id="copyTag">Gen. & Copy <i class="uil uil-copy"></i></button>
+            </div>
       </div>
-      <div id="generator">
-        <input id="tag" placeholder="Your unique tag (max len. 6)" />
-        <button id="copyTag">COPY TO CLIPBOARD</button>
+      <div id="container">
+          <div id="title">
+              What's that..
+          </div>
+          <div id="content">
+              <b>Unique Steam Group</b> simply generate <a href="#">zero-width space</a> between letters. Create a group from <a href="steam://openurl/https://steamcommunity.com/actions/GroupCreate/">application</a> or <a href="https://steamcommunity.com/actions/GroupCreate">webpage.</a> Generated names and tags might be already taken. Due to ZWSP name and tags are shorter. Can't be used as a group link. Font glitches might appear. Please, don’t abuse this feature.
+          </div>
       </div>
-      <div id="content">
-        <h3>How to use</h3>
-        <ul>
-          <li>
-            Type your tag in a field and press button to generate and
-            automatically copy tag.
-          </li>
-          <li>
-            Redirect to
-            <a
-              href="https://steamcommunity.com/actions/GroupCreate"
-              target="_blank"
-              >Steam Group Create</a
-            >
-            or do it in your
-            <a
-              href="steam://openurl/https://steamcommunity.com/actions/GroupCreate/"
-              >Steam</a
-            >
-            app.
-          </li>
-          <li>
-            Paste your generated tag into abbreviation and check if it's
-            available.
-          </li>
-          <li>Fill other inputs and create your group.</li>
-        </ul>
-        <div class="thanks">
-          <a
-            href="https://www.paypal.com/donate?hosted_button_id=9N67AV4H5DYTL"
-            target="_blank"
-            ><i class="uil uil-coffee"></i> Worked for you? Buy me a coffee!
-            Thank you!</a
-          >
-        </div>
-        <h3>
-          Notes (keep in mind
-          <img
-            src="https://cdn.frankerfacez.com/emoticon/160747/4"
-            height="18px"
-          />)
-        </h3>
-        <ul>
-          <li>
-            Even these unique Steam tags might be taken. It’s all about who’s
-            faster. 😥
-          </li>
-          <li>
-            Generator is adding
-            <a
-              href="https://en.wikipedia.org/wiki/Zero-width_space"
-              target="_blank"
-              >zero width space</a
-            >
-            charatcers between letters.
-          </li>
-          <li>Font glitch issues might appear.</li>
-          <li>
-            This can't be used in group url.
-          </li>
-        </ul>
-        <h3>Leave a comment</h3>
-        <div id="comments"></div>
+      <div id="container">
+          <div id="title">
+              Leave a comment..
+          </div>
+          <div id="comments"></div>
       </div>
     </div>
     <script src="src/index.js"></script>
