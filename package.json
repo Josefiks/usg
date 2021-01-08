@@ -1,7 +1,7 @@
 {
-  "name": "usgtg",
+  "name": "usg",
   "version": "1.0.0",
-  "description": "",
+  "description": "Unique Steam Group",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -10,6 +10,7 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.2.0",
+    "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.6.1"
   },
   "env": {

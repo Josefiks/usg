@@ -16,7 +16,22 @@ body {
   margin: 0;
   padding: 0;
 }
+#overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #0D1015;
+    /* transition: 1s 0.4s; */
+}
+#overlay > #loading {
 
+}
 #app {
   display: flex;
   flex-direction: column;
@@ -114,7 +129,7 @@ body {
   flex-grow: 1;
 }
 a {
-    font: 500 18px/1 "Rajdhani", sans-serif;
+    font: 500 18px/22.97px "Rajdhani", sans-serif;
     background: linear-gradient(90deg, #6ED34B 0%, #2BB048 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -164,4 +179,27 @@ input, button {
 .blue {
     background: linear-gradient(180deg, #4C89D9 0%, #50AEDA 100%) !important;
     box-shadow: 0px 4px 12px rgba(50, 141, 180, 0.4) !important;
+}
+#credits {
+    display: flex;
+    flex-direction: row;
+}
+#profileName {
+
+}
+#profileWrap {
+    background: linear-gradient(90deg, #6ED34B 0%, #2BB048 100%);
+    border-radius: 100%;
+    margin: 0 0 0 5px;
+    padding: 1px;
+    width: 16px;
+    height: 16px;
+}
+#profileAvatar {
+
+    align-self: center;
+    border-radius: 100%;
+
+    width: 16px;
+    height: 16px;
 }
