@@ -193,7 +193,6 @@ const Comment = ({ username, comment, time } /*#__PURE__*/) =>
 
 const mountNode = document.getElementById("comments");
 ReactDOM.render(/*#__PURE__*/ React.createElement(App, null), mountNode);
-
 /*
 [1] Thank you to Andreas Borgen for this bit:
     https://codepen.io/Sphinxxxx/pen/wjzRKO?editors=0010
