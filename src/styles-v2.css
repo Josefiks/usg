@@ -15,7 +15,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+#version {
+    padding: 10px;
+    text-align: center;
+    font: 500 18px/22.97px "Rajdhani", sans-serif;
+    color: #ffffff20;
+}
 #overlay {
     display: flex;
     justify-content: center;

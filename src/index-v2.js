@@ -32,7 +32,7 @@ $(window).load(function(){
     var $inputTag = $("input#tag");
 
     $inputName.keyup(function (e) {
-        var max = 32;
+        var max = 63;
         if ($inputName.val().length > max) {
             var audio = new Audio("src/sound/hit.mp3");
             audio.volume = 0.1;
@@ -41,7 +41,7 @@ $(window).load(function(){
         }
     });
     $inputTag.keyup(function (e) {
-        var max = 6;
+        var max = 11;
         if ($inputTag.val().length > max) {
             var audio = new Audio("src/sound/hit.mp3");
             audio.volume = 0.1;
@@ -50,33 +50,56 @@ $(window).load(function(){
         }
     });
 
-    /* copy functions */
     function copyName() {
-      var getName = document.getElementById("name").value;
-      var splitName = getName.split("").join("؜");
-      $("input#name").val(splitName).select();
-      document.execCommand("copy");
+        var getName = document.getElementById("name").value;
+        var splitName = getName.split("");
 
-      var audio = new Audio("src/sound/buttonclickrelease.ogg");
-      audio.volume = 0.3;
-      audio.play();
+        if(splitName.length <= 2) {
+            var splitName = splitName.join("‍");
+        } else {
+            var randomArrayElement = Math.floor(Math.random() * splitName.length);
+            var getValue = splitName[randomArrayElement];
+            var updateArrayElement = splitName[randomArrayElement] = getValue + "‍";
+            var splitName = splitName.join("");
+        }
 
-      $("input#name").val(getName);
-      document.getSelection().removeAllRanges();
+        console.log(splitName);
+
+        $("input#name").val(splitName).select();
+        document.execCommand("copy");
+
+        var audio = new Audio("src/sound/buttonclickrelease.ogg");
+        audio.volume = 0.3;
+        audio.play();
+
+        $("input#name").val(getName);
+        document.getSelection().removeAllRanges();
     }
 
     function copyTag() {
-      var getTag = document.getElementById("tag").value;
-      var splitTag = getTag.split("").join("؜");
-      $("input#tag").val(splitTag).select();
-      document.execCommand("copy");
+        var getTag = document.getElementById("tag").value;
+        var splitTag = getTag.split("");
 
-      var audio = new Audio("src/sound/buttonclickrelease.ogg");
-      audio.volume = 0.3;
-      audio.play();
+        if(splitTag.length <= 2) {
+            var splitTag = splitTag.join("‍");
+        } else {
+            var randomArrayElement = Math.floor(Math.random() * splitTag.length);
+            var getValue = splitTag[randomArrayElement];
+            var updateArrayElement = splitTag[randomArrayElement] = getValue + "‍";
+            var splitTag = splitTag.join("");
+        }
 
-      $("input#tag").val(getTag);
-      document.getSelection().removeAllRanges();
+        console.log(splitTag)
+
+        $("input#tag").val(splitTag).select();
+        document.execCommand("copy");
+
+        var audio = new Audio("src/sound/buttonclickrelease.ogg");
+        audio.volume = 0.3;
+        audio.play();
+
+        $("input#tag").val(getTag);
+        document.getSelection().removeAllRanges();
     }
 
     $('#overlay').fadeOut();

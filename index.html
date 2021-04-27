@@ -5,8 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="google-site-verification" content="PK-411V7EWBEbuJ8doesPy3o8M2Pjr6r_V1f7D4U0xA" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="src/styles.css" />
-        <link rel="stylesheet" href="src/styles.css" />
+        <link rel="stylesheet" href="src/styles-v2.css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"/>
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     </head>
@@ -27,11 +26,11 @@
         </div>
         <div id="generators">
             <div id="generator">
-                <input id="name" placeholder="Unique name (max len. 32)" />
+                <input id="name" placeholder="Unique name (max len. 63)" />
                 <button class="button" id="copyName">Gen. & Copy <i class="uil uil-copy"></i></button>
             </div>
             <div id="generator">
-                <input id="tag" placeholder="Unique abbreviation (max len. 6)" />
+                <input id="tag" placeholder="Unique abbreviation (max len. 11)" />
                 <button class="button blue" id="copyTag">Gen. & Copy <i class="uil uil-copy"></i></button>
             </div>
       </div>
@@ -40,7 +39,7 @@
               What's that..
           </div>
           <div id="content">
-              <b>Unique Steam Group</b> simply generate <a href="#">zero-width space</a> between letters. Create a group from <a href="steam://openurl/https://steamcommunity.com/actions/GroupCreate/">application</a> or <a href="https://steamcommunity.com/actions/GroupCreate" target="_blank">webpage.</a> Generated names and tags might be already taken. Due to ZWSP name and tags are shorter. Can't be used as a group link. Font glitches might appear. Please, don’t abuse this feature.
+              <b>Unique Steam Group</b> simply generate <a href="#">zero-width</a> character between letters. Create a group from <a href="steam://openurl/https://steamcommunity.com/actions/GroupCreate/">application</a> or <a href="https://steamcommunity.com/actions/GroupCreate" target="_blank">webpage.</a> Generated names and tags might be already taken. Due to ZWJ tags are a bit shorter. Can't be used as a group link. Font glitches might appear. Please, don’t abuse this feature.
               <div id="credits">
                   Sincerely,&nbsp;<a id="profileName" href="https://steamcommunity.com/id/cpt-jsph" target="_blank"></a><div id="profileWrap">
 
@@ -54,7 +53,11 @@
           </div>
           <div id="comments"></div>
       </div>
+      <div id="version">
+          1.10 · Latest update 27 April 2021
+      </div>
     </div>
+
     <!-- <script src="src/timeago.js"></script> -->
     <script src="https://cdn.rawgit.com/yahoo/xss-filters/master/dist/xss-filters.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -64,6 +67,6 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 
     <script src="src/messages.js"></script>
-    <script src="src/index.js"></script>
+    <script src="src/index-v2.js"></script>
   </body>
 </html>
