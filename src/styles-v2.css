@@ -21,6 +21,11 @@ body {
     font: 500 18px/22.97px "Rajdhani", sans-serif;
     color: #ffffff20;
 }
+#donate {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 #overlay {
     display: flex;
     justify-content: center;
