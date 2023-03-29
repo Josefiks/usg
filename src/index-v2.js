@@ -26,6 +26,7 @@ $(window).load(function(){
 
     document.getElementById("copyName").addEventListener("click", copyName);
     document.getElementById("copyTag").addEventListener("click", copyTag);
+    document.getElementById("donate").addEventListener("click", donate);
 
     /* max lenght */
     var $inputName = $("input#name");
@@ -49,7 +50,9 @@ $(window).load(function(){
             $inputTag.val($inputTag.val().substr(0, max));
         }
     });
-
+    function donate() {
+        window.open('https://donate.stripe.com/7sIdRFaP37tzdJm5kk', '_blank');
+    }
     function copyName() {
         var getName = document.getElementById("name").value;
         var splitName = getName.split("");
